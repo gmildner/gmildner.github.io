@@ -4,135 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gabriel Mildner | Portfolio</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
-      color: #1f2933;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #12355b;
-      color: white;
-      text-align: center;
-      padding: 70px 20px;
-    }
-
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 19px;
-      max-width: 750px;
-      margin: auto;
-    }
-
-    nav {
-      background-color: #0b2545;
-      text-align: center;
-      padding: 14px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 18px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #b8d8f8;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 25px;
-    }
-
-    section {
-      background-color: white;
-      margin: 25px 0;
-      padding: 32px;
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    }
-
-    h2 {
-      color: #12355b;
-      margin-bottom: 16px;
-      border-bottom: 2px solid #d7e3ef;
-      padding-bottom: 8px;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .skill {
-      background-color: #e7f0f8;
-      color: #12355b;
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-weight: bold;
-    }
-
-    .project {
-      margin-bottom: 22px;
-    }
-
-    .project:last-child {
-      margin-bottom: 0;
-    }
-
-    .project h3 {
-      color: #1d4e89;
-      margin-bottom: 5px;
-    }
-
-    .github-link {
-      display: inline-block;
-      margin-top: 18px;
-      background-color: #12355b;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    .github-link:hover {
-      background-color: #1d4e89;
-    }
-
-    footer {
-      background-color: #0b2545;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header>
     <h1>Gabriel Mildner</h1>
-    <p>
-      I am a finance student at Rutgers Business School interested in
-      investment banking, equity research, valuation, and financial markets.
-    </p>
+    <p>I am a finance student at Rutgers Business School interested in investment banking, equity research, valuation, and financial markets.</p>
   </header>
 
   <nav>
@@ -144,16 +21,11 @@
   <main>
     <section id="about">
       <h2>Personal Statement</h2>
-      <p>
-        I am a finance student who enjoys analyzing companies, understanding
-        what drives their value, and applying what I learn through internships,
-        financial modeling, and independent research.
-      </p>
+      <p>I am a finance student who enjoys analyzing companies, understanding what drives their value, and applying what I learn through internships, financial modeling, and independent research.</p>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
-
       <div class="skills">
         <span class="skill">Microsoft Excel</span>
         <span class="skill">Financial Modeling</span>
@@ -171,38 +43,24 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <h3>Public Company Valuation</h3>
-        <p>
-          I built a valuation analysis using a discounted cash flow model and
-          comparable-company multiples. I reviewed assumptions involving WACC,
-          terminal growth, enterprise value, and equity value to understand how
-          changes in those inputs affect a company’s estimated value.
-        </p>
+        <h3>Nokia Public-Company Valuation</h3>
+        <p>I used a DCF and trading multiples to compare Nokia's estimated value with its observed share price. The project also shows how much the conclusion depends on WACC, terminal value, and forward EBITDA assumptions.</p>
+        <a class="button" href="nokia-valuation.html">View Valuation</a>
       </div>
 
       <div class="project">
-        <h3>Goldman Sachs Internal Audit Job Simulation</h3>
-        <p>
-          I completed a Forage simulation focused on risk assessment and
-          internal audit. I evaluated risks involving trade execution, credit
-          monitoring, and anti-money-laundering controls, then recommended ways
-          the controls could be improved.
-        </p>
+        <h3>Data Center Infrastructure &amp; Vertiv Research</h3>
+        <p>I researched how AI and higher computing density are changing data-center power and cooling needs. I then used Vertiv as a company example to connect the industry trends to a public business.</p>
+        <a class="button" href="data-center-research.html">View Research</a>
       </div>
 
       <div class="project">
-        <h3>Industry and Company Research</h3>
-        <p>
-          I researched companies and industries by reviewing their business
-          models, competitors, market trends, growth drivers, and risks. I
-          organized the findings in Excel so that the companies could be
-          compared more easily.
-        </p>
+        <h3>Trading Strategy &amp; Risk Management</h3>
+        <p>I reviewed a rules-based trading process built around trend confirmation, volume profile, predefined exits, and trade logging. The main focus was how risk-reward and position sizing can matter more than win rate by itself.</p>
+        <a class="button" href="trading-risk-analysis.html">View Analysis</a>
       </div>
 
-      <a class="github-link" href="https://github.com/gmildner" target="_blank">
-        View My GitHub
-      </a>
+      <a class="button" href="https://github.com/gmildner" target="_blank" rel="noopener">View My GitHub</a>
     </section>
   </main>
 

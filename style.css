@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2933;
+  line-height: 1.65;
+}
+
+header {
+  background: #12355b;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 19px;
+  max-width: 760px;
+  margin: auto;
+}
+
+nav {
+  background: #0b2545;
+  text-align: center;
+  padding: 14px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #b8d8f8;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px;
+}
+
+section {
+  background: white;
+  margin: 25px 0;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  color: #12355b;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #d7e3ef;
+  padding-bottom: 8px;
+}
+
+h3 {
+  color: #1d4e89;
+  margin: 20px 0 7px;
+}
+
+p + p {
+  margin-top: 12px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #e7f0f8;
+  color: #12355b;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.project {
+  margin-bottom: 28px;
+}
+
+.project:last-of-type {
+  margin-bottom: 0;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+  background: #12355b;
+  color: white;
+  padding: 9px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #1d4e89;
+}
+
+.back-link {
+  color: #12355b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.metric {
+  background: #edf3f8;
+  border-left: 4px solid #1d4e89;
+  padding: 14px;
+}
+
+.metric strong {
+  display: block;
+  color: #12355b;
+  font-size: 18px;
+}
+
+ul {
+  margin: 10px 0 0 22px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.note {
+  background: #fff7e6;
+  border-left: 4px solid #d49a20;
+  padding: 14px;
+  margin-top: 18px;
+}
+
+.sources a {
+  color: #1d4e89;
+}
+
+footer {
+  background: #0b2545;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 34px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
+  }
+
+  section {
+    padding: 24px;
+  }
+}

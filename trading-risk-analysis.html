@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Risk Analysis | Gabriel Mildner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Trading Strategy &amp; Risk Management</h1>
+    <p>A review of a rules-based trading process</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#process">Process</a>
+    <a href="#risk">Risk</a>
+    <a href="#lessons">Lessons</a>
+  </nav>
+
+  <main>
+    <section>
+      <a class="back-link" href="index.html#projects">&larr; Back to projects</a>
+      <h2>Project Overview</h2>
+      <p>I reviewed more than 100 logged trades to see whether my results came from a repeatable process or a few isolated wins. The goal was to judge the strategy using expectancy and risk control instead of looking only at the percentage of winning trades.</p>
+    </section>
+
+    <section id="process">
+      <h2>Trading Process</h2>
+      <ul>
+        <li><strong>Trend filter:</strong> I use the relationship between the 8, 21, and 50 EMAs to establish directional bias.</li>
+        <li><strong>Location:</strong> Volume profile helps me identify high-volume areas, low-volume areas, and levels where price previously accepted or rejected value.</li>
+        <li><strong>Confirmation:</strong> I wait for confirmation instead of entering only because price reached a level.</li>
+        <li><strong>Exit rule:</strong> I define where the idea is wrong before entering, such as a structure break or a return into an area that invalidates the setup.</li>
+        <li><strong>Review:</strong> I log trades so that I can compare the plan with what I actually did.</li>
+      </ul>
+    </section>
+
+    <section id="risk">
+      <h2>Risk Analysis</h2>
+      <p>The sample had a win rate of roughly 35%, but it was still net profitable because the average winner was larger than the average loser. That showed me why win rate by itself does not determine whether a strategy works.</p>
+
+      <div class="summary-grid">
+        <div class="metric"><strong>100+</strong>Trades reviewed</div>
+        <div class="metric"><strong>~35%</strong>Observed win rate</div>
+        <div class="metric"><strong>Predefined</strong>Invalidation level</div>
+      </div>
+
+      <p>Expected value can be expressed as:</p>
+      <p><strong>(Win rate × average win) − (Loss rate × average loss)</strong></p>
+      <p>A lower win rate can still produce positive expectancy when gains are large enough relative to losses. Position size also needs to reflect the distance to the stop so that one wide-stop trade does not create much more account risk than another trade.</p>
+    </section>
+
+    <section id="lessons">
+      <h2>Main Lessons</h2>
+      <p>The most important lesson was that risk management has to be part of the setup rather than a decision made after the trade moves against me. A strategy can be wrong often and still work, while a high win rate can hide poor risk-reward and occasional oversized losses.</p>
+      <p>I would improve the analysis by separating trades by setup, market condition, and time of day. That would show whether the overall result comes from a repeatable edge or only one narrow group of trades.</p>
+      <div class="note">This personal project is educational and does not guarantee future trading results.</div>
+    </section>
+
+    <section class="sources">
+      <h2>Reference</h2>
+      <ul>
+        <li><a href="https://www.cmegroup.com/education/courses/trade-and-risk-management/proper-position-size" target="_blank" rel="noopener">CME Group: Proper Position Size</a></li>
+        <li><a href="https://www.cmegroup.com/education/courses/building-a-trade-plan/risk-management-and-your-trade-plan" target="_blank" rel="noopener">CME Group: Risk Management and Your Trade Plan</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 Gabriel Mildner</p></footer>
+</body>
+</html>
